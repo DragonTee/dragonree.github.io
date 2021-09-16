@@ -1,0 +1,142 @@
+:root {
+	--bg-color:#262a2e;
+	--hover-bg-color: #2b3034;
+	--hover-text-color: #EFE9F4;
+	--hover-link-color: #858b92;
+	--main-color: #f58e78;
+	--text-color-primary: #f58e78;
+	--text-color-secondary: #aaa;
+	--border-radius: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color)!important;
+  background-size: cover!important;
+  background: url(https://i.imgur.com/DmJduiG.png) no-repeat fixed center 0;
+}
+
+div {
+	color: var(--main-color);
+	font-family: 'Rubik', sans-serif !important;
+}
+
+section {
+	color: var(--main-color);
+	font-family: 'Rubik', sans-serif !important;	
+}
+
+nav {
+	display: flex;
+	align-items: center;	
+}
+
+nav ul {
+	margin: auto;
+	list-style-type: none;
+}
+
+nav ul li:hover {
+	float: left;		
+	background-color: var(--hover-bg-color);
+	color: var(--hover-text-color);	
+	transform: scale(1.1);
+}
+
+nav ul li {
+	font-size: 1.2em!important;
+	float: left;		
+	min-height: 3vw;
+	color: var(--text-color-primary);
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+	transition: background-color 0.4s ease-out, transform 0.4s ease-out;	
+}
+
+.container ul {
+	margin: auto;
+	list-style-type: none;
+}
+
+.container ul li:hover {
+	transform: scale(1.1);
+}
+
+.container ul li {
+	transform-origin: left;	
+	width: fit-content;
+	transition: transform 0.4s ease-out;	
+}
+
+.container ul li a:hover {
+	transform: scale(1.1);
+	background-color: var(--bg-color);
+	color: var(--hover-link-color);		
+}
+
+.container ul li a {	
+	font-size: 1.4em;
+	text-decoration: none;
+	color: var(--text-color-primary);
+	transition: background-color 0.4s ease-out, transform 0.4s ease-out;	
+}
+
+nav ul li a:hover {	
+
+}
+
+nav ul li a {			
+	height: 100%;
+	color: var(--text-color-primary);
+	text-decoration: none;
+	text-align: center;
+	padding: 14px;	
+	display: block;
+	font-family: 'Rubik', sans-serif !important;
+}
+
+.container {
+	padding: calc(10px + var(--border-radius));
+	width: 1000px;
+	margin: auto;
+	height: 100%;
+	overflow: hidden;
+	border-radius: var(--border-radius);
+	background-color: var(--hover-bg-color);	
+	color: var(--text-color-secondary);
+}
+
+.centered {
+	text-align: center;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 1.5em;
+	color: var(--text-color-primary);
+}
+
+h2 {
+	font-weight: 100;
+}
+
+p {
+	font-size: 20px;
+}
+
+img {
+	border-radius: var(--border-radius);
+	border-color: var(--bg-color);
+	border-width: 2px;
+	border-style: solid;
+}
+
+section {
+	margin-bottom: 30px;
+	padding-top: 10px;	
+	color: var(--text-color-secondary);
+}
+
+.inline {
+	display: inline;
+}
