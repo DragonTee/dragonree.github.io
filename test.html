@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Тест по дисциплине - Мамонкин Иван</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 	<body>
@@ -19,11 +21,74 @@
 		</header>
 		<div class="container">
 			<h1 class="centered">
-				Обо мне			
+				Вопросы по дисциплине				
 			</h1>
-			<p>
-				Libero consequat condimentum posuere dui nulla a taciti tempor consectetur conubia aenean habitasse ut placerat consectetur fames. Per parturient erat odio condimentum parturient mattis scelerisque eu duis nascetur in fringilla justo ut scelerisque. Ac quis ullamcorper vestibulum conubia viverra dis vestibulum ullamcorper neque himenaeos elit elit sed hac metus commodo amet vestibulum. Ullamcorper lacinia at tellus nam lobortis a a dapibus eros accumsan condimentum eu quam dui imperdiet diam rhoncus semper nam a a himenaeos. Cum integer condimentum adipiscing adipiscing ad aliquam condimentum vivamus ad ut a a vestibulum vulputate curabitur a. Metus litora eget parturient ad eu a etiam.
-			</p>
+			<h1 class="centered">
+				Основы программирования и алгоритмические языки
+			</h1>
+			<div class="contact">
+				<form action="mailto:manonkin123@gmail.com" method="POST">
+					<label for="name">ФИО</label>
+					<input type="text" placeholder="ФИО" id="name" required>
+					<label for="group-select">Группа</label>
+					<select name="groups" id="group-select" required>
+					    <option value="">--Выберите группу--</option>
+					    <option value="IS-b-19-1">ИС/б-19-1-о</option>
+					    <option value="IS-b-19-2">ИС/б-19-2-о</option>
+					    <option value="PI-b-19-1">ПИ/б-19-1-о</option>
+					    <option value="IVT-b-19-1">ИВТ/б-19-1-о</option>
+					    <option value="IVT-b-19-2">ИВТ/б-19-2-о</option>
+					    <option value="PIN-b-19-1">ПИН/б-19-1-о</option>
+					    <option value="UTS-b-19-1">УТС/б-19-1-о</option>
+					    <option value="UTS-b-19-2">УТС/б-19-2-о</option>
+					</select>
+					<div class="question">
+						<h2>Вопрос 1:</h2>
+						<p>Lorem Ipsum</p>
+						<div class="answers">
+							<input type="checkbox" id="ans_1-1" name="answer1_1"
+						         checked>
+						  	<label for="ans_1-1">Ответ 1</label>
+						 	<input type="checkbox" id="ans_1-2" name="answer1_2"
+						         checked>
+						  	<label for="ans_1-2">Ответ 2</label>
+						</div>
+					</div>
+					<div class="question">
+						<h2>Вопрос 2:</h2>
+						<p>Lorem Ipsum</p>
+						<div class="answers">
+						  <label>Выберите вариант ответа:
+						  <select name="answer_2">
+						    <optgroup label="Группа 1">
+						      <option value="ans_2-1">Один</option>
+						      <option value="ans_2-2">Два</option>
+						      <option value="ans_2-3">Три</option>
+						    </optgroup>
+						    <optgroup label="Группа 2">
+						      <option value="ans_2-4">Один</option>
+						      <option value="ans_2-5">Два</option>
+						      <option value="ans_2-6">Три</option>
+						      <option value="ans_2-7">Четыре</option>
+						    </optgroup>
+						  </select>
+						</label>
+						</div>
+					</div>
+					<div class="question">
+						<h2>Вопрос 3:</h2>
+						<p>Lorem Ipsum</p>
+						<div class="answers">
+						  <label for="ans_3">Ответ</label>
+							<input type="text" placeholder="Ответ" id="ans_3" required>
+						</div>
+					</div>
+					<div class="submit-container">
+						<input type="submit" value="Отправить" class="submit" required="">
+						<input type="reset" value="Очистить форму" class="submit" required="">
+					</div>
+				</form>
+			</div>
 		</div>	
 	</body>
 </html>

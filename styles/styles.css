@@ -177,7 +177,7 @@ table tr th {
 	color: var(--text-color-primary);
 }
 
-.contact input {
+.contact input[type="text"], input[type="number"], input[type="email"] {
 	width: 100%;
 	margin: 0;
 	margin-top: 5px;
@@ -216,4 +216,17 @@ table tr th {
 	background-color: var(--bg-color);
 	color: var(--text-color-secondary);
 	cursor: pointer;
+}
+
+.question {
+	margin: 1rem;	
+	padding: 1rem;
+	padding-top: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--text-color-secondary);
+}
+
+.question .answers {
+	padding: 0.5 rem;
 }
