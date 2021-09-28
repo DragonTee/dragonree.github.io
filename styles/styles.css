@@ -37,7 +37,6 @@ nav ul {
 }
 
 nav ul li:hover {
-	float: left;		
 	background-color: var(--hover-bg-color);
 	color: var(--hover-text-color);	
 	transform: scale(1.1);
@@ -45,8 +44,7 @@ nav ul li:hover {
 
 nav ul li {
 	font-size: 1.2em!important;
-	float: left;		
-	min-height: 3vw;
+	float: left;	
 	color: var(--text-color-primary);
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
@@ -79,10 +77,6 @@ nav ul li {
 	text-decoration: none;
 	color: var(--text-color-primary);
 	transition: background-color 0.4s ease-out, transform 0.4s ease-out;	
-}
-
-nav ul li a:hover {	
-
 }
 
 nav ul li a {			
@@ -138,6 +132,10 @@ section {
 
 .inline {
 	display: inline;
+}
+
+table {
+	width: 100%;
 }
 
 table, th, td {
@@ -228,5 +226,5 @@ table tr th {
 }
 
 .question .answers {
-	padding: 0.5 rem;
+	padding: 0.5rem;
 }
