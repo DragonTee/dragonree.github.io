@@ -90,7 +90,6 @@ nav ul li a {
 }
 
 .container {
-	padding: calc(10px + var(--border-radius));
 	max-width: 1000px;
 	margin: auto;
 	height: 100%;
@@ -127,6 +126,7 @@ img {
 section {
 	margin-bottom: 30px;
 	padding-top: 10px;	
+	padding: calc(10px + var(--border-radius));
 	color: var(--text-color-secondary);
 }
 
@@ -157,7 +157,7 @@ table tr th {
 
 .row {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: nowrap;	
 }
 
 .col {
