@@ -1,0 +1,50 @@
+:root {
+	--bg-color:#262a2e;
+	--hover-bg-color: #2b3034;
+	--text-color-primary: #f58e78;
+	--border-radius: 10px;
+	scroll-behavior: smooth;
+}
+body {
+	backdrop-filter:  blur(3px);
+	display: grid;
+	background-color: var(--bg-color)!important;
+	background-size: cover!important;
+	background: url(https://i.imgur.com/DmJduiG.png) no-repeat fixed center 0;
+	grid-template-rows: 60px 1fr 60px;
+	grid-template-columns: 20% 1fr 15%;
+	grid-template-areas:
+	"header header  header"
+	"nav    article ads"
+	"footer footer  footer";
+	grid-gap: 30px;
+	height: 100vh;
+	margin: 0; 
+}
+header, footer, article, nav, div {
+	padding: 20px;
+	color: var(--text-color-primary);
+	font-size: large;
+	background-color: var(--bg-color);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: var(--hover-bg-color);
+	border-width: 2px;
+	opacity: 0.9;
+}
+header, footer {
+	border-radius: 0;
+}
+#pageHeader { grid-area: header; }
+#pageFooter { grid-area: footer; }
+#mainArticle { grid-area: article; }
+#mainNav { 
+	grid-area: nav; 
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;	
+}
+#siteAds { 
+	grid-area: ads; 
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}

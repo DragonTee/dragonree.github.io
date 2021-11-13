@@ -1,0 +1,77 @@
+:root {
+	--bg-color:#262a2e;
+	--hover-bg-color: #2b3034;
+	--text-color-primary: #f58e78;
+	--border-radius: 10px;
+	scroll-behavior: smooth;
+}
+body {
+	backdrop-filter:  blur(3px);
+	display: grid;
+	background-color: var(--bg-color)!important;
+	background-size: cover!important;
+	background: url(https://i.imgur.com/DmJduiG.png) no-repeat fixed center 0;
+	grid-template-rows: 60px 1fr 60px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header  header header"
+	"col1 col2 col3 col4"
+	"footer footer  footer footer";
+	grid-gap: 0px;
+	height: 100vh;
+	margin: 0; 
+}
+div {
+	margin: 15px;
+}
+@media screen and (max-width: 980px) {
+    body {
+        grid-template-rows: 60px 1fr 1fr 60px;
+        grid-template-columns: 1fr 1fr;
+	    grid-template-areas:
+	    "header header"
+	    "col1 col2"
+	    "col3 col4"
+	    "footer footer";
+    }
+    div {
+		margin: 10px;
+	}
+}
+@media screen and (max-width: 650px) {
+    body {
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr 60px;
+        grid-template-columns: 1fr;
+	    grid-template-areas:
+	    "header"
+	    "col1"
+	    "col2"
+	    "col3"
+	    "col4"
+	    "footer";
+    }
+    div {
+		margin: 5px;
+	}
+}
+header, footer, article, nav, div {
+	padding: 0.5em;
+	color: var(--text-color-primary);
+	font-size: 1.2em;
+	background-color: var(--bg-color);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: var(--hover-bg-color);
+	border-width: 2px;
+	opacity: 0.9;
+}
+
+header, footer {
+	border-radius: 0;
+}
+#pageHeader { grid-area: header; }
+#pageFooter { grid-area: footer; }
+#col1 { grid-area: col1; }
+#col2 { grid-area: col2; }
+#col3 { grid-area: col3; }
+#col4 { grid-area: col4; }
